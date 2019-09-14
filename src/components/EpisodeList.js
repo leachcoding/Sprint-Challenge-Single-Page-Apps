@@ -24,7 +24,7 @@ export default function EpisodeList(props) {
   return (
     <div className='episode-list'>
       {episodes.map(episode => (
-        <EpisodeDetails key={id} episode={episode} />
+        <EpisodeDetails key={episode.id} episode={episode} />
       ))}
     </div>
   );

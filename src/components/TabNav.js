@@ -1,8 +1,4 @@
 import React from "react";
-import LocationsList from './LocationsList.js';
-import WelcomePage from './WelcomePage.js';
-import CharacterList from './CharacterList.js';
-import EpisodeList from './EpisodeList.js';
 import { Tab, Menu, Icon } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
 
@@ -15,14 +11,29 @@ import { NavLink } from "react-router-dom";
 // https://react.semantic-ui.com/collections/breadcrumb/
 
 export default function TabNav() {
-  const panel = [
-    {menuItem: 'Home', render: () => <WelcomePage />},
-    {menuItem: 'Locations', render: () => <LocationsList />},
-    {menuItem: 'Characters', render: () => <CharacterList />},
-    {menuItem: 'Episodes', render: () => <EpisodeList />}
-  ]
 
   return (
-    <Tab panel={panel} />
+    <div className=''>
+      <NavLink exact to='/'>
+        <Icon />
+        Home
+      </NavLink>
+      <NavLink to='/character'>
+        <Icon />
+        Characters
+      </NavLink>
+      <NavLink to='/location'>
+        <Icon />
+        Locations
+      </NavLink>
+      <NavLink to='/episode'>
+        <Icon />
+        Episodes
+      </NavLink>
+      <NavLink to='/search'>
+        <Icon />
+        Search
+      </NavLink>
+    </div>
   );
 };

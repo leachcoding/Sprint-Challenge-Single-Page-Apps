@@ -23,7 +23,7 @@ export default function LocationsList(props) {
     console.log(locations),
     <div className='location-list'>
       {locations.map(location => (
-        <LocationDetails key={id} location={location} />
+        <LocationDetails key={location.id} location={location} />
       ))}
     </div>
   );
