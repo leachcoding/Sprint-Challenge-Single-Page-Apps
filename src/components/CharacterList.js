@@ -30,8 +30,11 @@ function CharacterDetails({character}) {
   return (
     <Card className='char-card'>
       <Image src={character.image} alt='character-pic' />
-      <Card.Header>{character.name}</Card.Header>
-      <p>Status: {character.status}</p>
+      <Card.Content>
+        <Card.Header>{character.name}</Card.Header>
+        <Card.Description>Status: {character.status}</Card.Description>
+        <Card.Description>Species: {character.species} {character.gender}</Card.Description>
+      </Card.Content>
     </Card>
   );
 }
