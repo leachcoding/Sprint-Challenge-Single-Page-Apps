@@ -22,7 +22,7 @@ export default function EpisodeList(props) {
   }, []);
 
   return (
-    <div className='episode-list'>
+    <div className='episode-list grid-view'>
       {episodes.map(episode => (
         <EpisodeDetails key={episode.id} episode={episode} />
       ))}
@@ -33,9 +33,13 @@ export default function EpisodeList(props) {
 function EpisodeDetails({episode}) {
   return (
     <Card className='episode-card'>
-      <h1>{episode.name}</h1>
-      <p>{episode.air_date}</p>
-      <p>{episode.episode}</p>
+      <Card.Content>
+        <Card.Header>{episode.name}</Card.Header>
+        <Card.Description>Air Date: {episode.air_date}</Card.Description>
+        <Card.Description>{episode.episode}</Card.Description>
+        <Card.Description>Creation Date: {episode.created}</Card.Description>
+        <Card.Description>Number of Characters in Episode: {episode.characters.length}</Card.Description>
+      </Card.Content>
     </Card>
   );
 }

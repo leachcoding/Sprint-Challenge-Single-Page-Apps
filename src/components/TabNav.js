@@ -13,25 +13,25 @@ import { NavLink } from "react-router-dom";
 export default function TabNav() {
 
   return (
-    <div className=''>
-      <NavLink exact to='/'>
-        <Icon />
+    <div className='ui attached tabular menu'>
+      <NavLink exact to='/' className='item'>
+        <Icon name='home'/>
         Home
       </NavLink>
-      <NavLink to='/character'>
-        <Icon />
+      <NavLink to='/character' className='item'>
+        <Icon name='users'/>
         Characters
       </NavLink>
-      <NavLink to='/location'>
-        <Icon />
+      <NavLink to='/location' className='item'>
+        <Icon name='map outline'/>
         Locations
       </NavLink>
-      <NavLink to='/episode'>
-        <Icon />
+      <NavLink to='/episode' className='item'>
+        <Icon name='video'/>
         Episodes
       </NavLink>
-      <NavLink to='/search'>
-        <Icon />
+      <NavLink to='/search' className='item'>
+        <Icon name='search'/>
         Search
       </NavLink>
     </div>

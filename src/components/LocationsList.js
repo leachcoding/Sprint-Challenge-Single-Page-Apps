@@ -21,7 +21,7 @@ export default function LocationsList(props) {
 
   return (
     console.log(locations),
-    <div className='location-list'>
+    <div className='location-list grid-view'>
       {locations.map(location => (
         <LocationDetails key={location.id} location={location} />
       ))}
@@ -32,8 +32,11 @@ export default function LocationsList(props) {
 function LocationDetails({location}) {
   return (
     <Card className='location-card'>
-      <h1>{location.name}</h1>
-      <p>{location.type}</p>
+      <Card.Content>
+        <Card.Header>{location.name}</Card.Header>
+        <Card.Description>{location.type}</Card.Description>
+        <Card.Description>{location.dimension}</Card.Description>
+      </Card.Content>
     </Card>
   );
 }
