@@ -9,7 +9,7 @@ This challenge allows you to practice the concepts and techniques learned over t
 
 This is an individual assessment. All work must be your own. Your challenge score is a measure of your ability to work independently using the material covered through this sprint. You need to demonstrate proficiency in the concepts and objectives introduced and practiced in preceding days.
 
-You are not allowed to collaborate with students during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support by reaching out through DM to your TL. 
+You are not allowed to collaborate with students during the Sprint Challenge. However, you are encouraged to follow the twenty-minute rule and seek support by reaching out through DM to your TL.
 You have **three hours to complete** this challenge. **Plan your time accordingly.**
 
 ## Commits
@@ -25,11 +25,16 @@ In this challenge, you will create a Single Page Application complete with Clien
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question.
 
 - [ ] Explain benefit(s) using `client-side routing`?
-> Answer:
+
+> Answer: Client-side routing is a JavaScript managed routing option. It offers control over your site URL & content without necessarily having to wait for a server to respond with content. It is designed to mimic the appearance of traditional multi page websites. Because less data is processed, routing between views is generally faster. Smooth transitions and animations between views are easier to implement.
+
 - [ ] What does AJAX stand for?
-> Answer:
+
+> Answer: Asynchronous JavaScript and XML.
+
 - [ ] What are `controlled components` in React?
-> Answer:
+
+> Answer: In HTML, form elements such as <input>, <textarea>, and <select> typically maintain their own state and update it based on user input. In React, mutable state is typically kept in the state property of components, and only updated with setState(). We can combine the two by making the React state be the “single source of truth”. Then the React component that renders a form also controls what happens in that form on subsequent user input. An input form element whose value is controlled by React in this way is called a “controlled component”.
 
 
 ## Project Set Up
@@ -164,4 +169,3 @@ Start with the most _familiar (or fun) sounding_ stretch goal.
 > **Note:** AFTER Sprint Challenge: [Solutions to many stretch goals](https://github.com/LambdaSchool/Sprint-Challenge-Single-Page-Apps-Solution/pulls) (and live demo URLs) are available from TLs (or GitHub admins.)
 
 There are many ways to implement each of these requirements!
-
